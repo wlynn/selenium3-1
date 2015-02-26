@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Package Exclude"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.016">
+  <properties />
+  
+  
+            <testcase name="Test4" time="0.001" classname="TestNGThreePackage.ClassTwo" />
+                <testcase name="Test2" time="0.012" classname="TestNGThreePackage.ClassTwo" />
+                <testcase name="Group1_Test1" time="0.001" classname="TestNGThreePackage.ClassTwo" />
+                <testcase name="Test3" time="0.001" classname="TestNGThreePackage.ClassTwo" />
+                <testcase name="Group1_Test2" time="0.001" classname="TestNGThreePackage.ClassTwo" />
+      
+</testsuite>

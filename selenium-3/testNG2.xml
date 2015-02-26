@@ -1,0 +1,108 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="Test Suite" verbose="1" >
+
+
+<test name="Group Priority Tests">
+	
+	<classes>
+		<class name="TestNGThreePackage.ClassTwo"></class>
+	</classes>
+
+
+</test>
+
+
+ 
+<test name="Package Exclude">
+<packages>
+<package name=".*">
+<exclude name="TestNGFourPackage"></exclude>
+</package>
+
+</packages>
+
+</test>
+
+
+<test name="Test In FireFox" >
+   <parameter name="browsers" value="FFX" />
+    <classes>
+      <class name="TestNGThreePackage.ClassThree" />
+    </classes>
+ </test>
+ 
+ <test name="Test In Google Chrome" >
+    <parameter name="browsers" value="CRM"></parameter>
+    	<classes>
+      		<class name="TestNGThreePackage.ClassThree"></class>
+    </classes>
+ </test>
+  
+  
+<!--   
+	<test name="Skipping a Test">
+	<packages>
+		<package name="TestNGThreePackage"></package>
+	</packages>
+	  
+	<classes>
+	<class name="TestNGOnePackage.ClassOne" >
+          <methods>
+              <include name=".*One*" />
+          </methods>
+          </class>
+       <class name="TestNGTwoPackage.ClassTwo" >
+         <methods>
+              <exclude name=".*One*" />
+          </methods>        
+        </class>
+    </classes>
+    
+  </test>
+  -->   
+</suite>
+
+<!--  
+
+	<test name="Failed Test" >
+   		<classes>  
+    		<class name="TestNGTwoPackage.ClassOne" />
+   		</classes>
+    </test>
+    
+    <test name="Package 1 Test">
+    	<packages>
+    		<package name="TestNGOnePackage">
+    		</package>
+    	</packages>  
+    </test>
+    
+    <test name="Passed Test" >
+   		<classes>
+    		<class name="TestNGOnePackage.ClassOne"/>  
+   		</classes>
+    </test>  
+
+
+
+<suite name="Suite One">
+<test name="Test One">
+    <classes>
+        <class name="TestNGOnePackage.ClassOne" >
+          <methods>
+              <include name="MethodOne" />
+          </methods>
+          </class>
+       <class name="TestNGTwoPackage.ClassTwo" >
+         <methods>
+              <exclude name="MethodOne" />
+          </methods>        
+        </class>
+    </classes>
+       <packages>
+             <package name="TestNGThreePackage" />
+       </packages>
+    </test> 
+</suite>
+-->

@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--
+<suite name="Test Suite" verbose="1">
+
+  <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+   </listeners>
+
+    <test name="Test Name 1" >
+   
+   <classes>
+    <class name="TestNGOnePackage.ClassOne"/>  
+   </classes>
+    </test>  
+    <test name="Test Name 2" >
+   <classes>  
+    <class name="TestNGTwoPackage.ClassOne" />
+   </classes>
+    </test>
+</suite>
+-->
+
+<suite name="webDriver" parallel="tests">
+   <test name="Test In FireFox" >
+    <parameter name="browser" value="FFX" />
+    <classes>
+      <class name="TestNGFourPackage.ParametersTest" />
+    </classes>
+  </test>
+   <test name="Test In Google Chrome" >
+    <parameter name="browser" value="CRM"></parameter>
+    <classes>
+      <class name="TestNGFourPackage.ParametersTest"></class>
+    </classes>
+  </test> 
+</suite>

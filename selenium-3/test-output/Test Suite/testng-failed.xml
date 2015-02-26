@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Suite]">
+  <parameter name="browsers" value="CRM"/>
+  <test name="Package Exclude(failed)">
+    <classes>
+      <class name="TestNGThreePackage.ClassOne">
+        <methods>
+          <include name="SkipTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- TestNGThreePackage.ClassOne -->
+      <class name="TestNGOnePackage.ClassOne">
+        <methods>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- TestNGOnePackage.ClassOne -->
+      <class name="systest.net.saisoft.selenium.dataDriver_TestNG2">
+        <methods>
+          <include name="f" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- systest.net.saisoft.selenium.dataDriver_TestNG2 -->
+      <class name="TestNGOnePackage.TestCase_NG">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- TestNGOnePackage.TestCase_NG -->
+      <class name="TestNGTwoPackage.ClassOne">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="MethodOne"/>
+        </methods>
+      </class> <!-- TestNGTwoPackage.ClassOne -->
+      <class name="TestNGThreePackage.ClassThree">
+        <methods>
+          <include name="GetPageTitle"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closeBrowsers"/>
+          <include name="closeBrowsers"/>
+        </methods>
+      </class> <!-- TestNGThreePackage.ClassThree -->
+      <class name="TestNGThreePackage.ClassTwo">
+        <methods>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- TestNGThreePackage.ClassTwo -->
+      <class name="systest.net.saisoft.selenium.dataDriver_TestNG3">
+        <methods>
+          <include name="f" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- systest.net.saisoft.selenium.dataDriver_TestNG3 -->
+      <class name="TestNGOnePackage.AllAnnontations">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- TestNGOnePackage.AllAnnontations -->
+    </classes>
+  </test> <!-- Package Exclude(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->
